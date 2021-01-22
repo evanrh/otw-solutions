@@ -1,0 +1,6 @@
+There is no one liner command for this one, not without prior knowledge anyway.
+First, we cd into the /etc/cron.d/ dir and cat some of the crontabs.
+Since we are looking to go to level 22, any that are being used by bandit22 are of interest.
+There is one script running at regular intervals, let's take a look at it.
+Upon a cat of the script, it seems there is a random file in /tmp that is being written to regularly, and it contains the password for bandit22.
+Doing a cat of that file gives the password.

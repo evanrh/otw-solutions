@@ -1,0 +1,6 @@
+find / -user bandit7 -group bandit6 -size 33c -exec cat {} \; 2>/dev/null
+
+The above command finds a file somewhere on the filesystem with an owner of user bandit7
+and group bandit6 that is of size 33 bytes.
+It then passes the found results to an exec command to cat the file and redirects
+stderr (2) to null, because this command produces errors on files it can't read.

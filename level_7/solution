@@ -1,0 +1,4 @@
+grep data.txt -e millionth | awk '{print $2}'
+
+The password was stored next to the word millionth, so I used grep to find it.
+I then piped it to awk to only print the password, just to be fancy.

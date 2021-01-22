@@ -1,0 +1,4 @@
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+The provided binary allows you to run a command as user bandit20.
+Since you have their UID, you can just read their password file directly.

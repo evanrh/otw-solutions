@@ -1,0 +1,4 @@
+ncat --ssl localhost 30001
+
+The password can be obtained by using the above command and entering the previous password.
+I couldn't get ncat to work in a pipeline, but it works by itself.

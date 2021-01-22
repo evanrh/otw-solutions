@@ -1,0 +1,5 @@
+ssh bandit18@bandit "cat readme"
+
+The above command was entered on my machine.
+SSH allows you to enter a command in your shell before any profiles or .rc files get loaded.
+Knowing this, the "cat readme" command can be ran to get the password.

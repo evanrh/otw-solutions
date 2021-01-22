@@ -1,0 +1,4 @@
+The file is hidden in a subdirectory.
+Any file or dir prepended with a dot (.) will be hidden by default.
+To see hidden files, use the -a flag on ls.
+This flag shows all files, even the hidden ones.

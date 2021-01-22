@@ -1,0 +1,4 @@
+base64 -d data.txt
+
+The password is base64 encoded in a file.
+The above command is a base64 decode, which prints the password

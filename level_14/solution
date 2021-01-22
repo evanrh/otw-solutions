@@ -1,0 +1,4 @@
+cat /etc/bandit_pass/$USER | nc localhost 30000
+
+The next password was obtained by sending the current password to a server running on localhost:30000.
+This can be done with netcat easily, as seen above.

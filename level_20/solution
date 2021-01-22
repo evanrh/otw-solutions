@@ -1,0 +1,5 @@
+nc -l localhost -p 8888 < /etc/bandit_pass/$USER &
+./suconnect 8888
+
+Using the first command sets up a "server" with netcat that sends the bandit20 password over port 8888.
+The suconnect binary then can get the password and return the new one.

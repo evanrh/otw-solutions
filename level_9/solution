@@ -1,0 +1,5 @@
+strings data.txt | grep -e "="
+
+This solution does not produce one, solid answer like most of the other challenges.
+The file to read is mostly binary data, so to filter out readable strings, "strings" is used.
+This is then piped to a grep to find any that have equals signs, because that is what preceds the password

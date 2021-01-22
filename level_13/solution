@@ -1,0 +1,3 @@
+ssh -i "filename" bandit14@localhost
+This is an easy one.
+There is no password, you just need to specify that the file is bandit14's identity file to ssh

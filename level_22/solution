@@ -1,0 +1,6 @@
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+
+The script that is being run regularly makes a md5 hash of the string "I am user bandit23".
+The first part of this hash is used to create a file in /tmp, which contains the password.
+This file can be catted.

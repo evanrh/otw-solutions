@@ -1,0 +1,4 @@
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+The data in the above file is rot13'd.
+A rot13 can be done with tr using the above command, which replaces each letter with its corresponding cipher character, 13 places away.

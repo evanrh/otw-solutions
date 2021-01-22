@@ -1,0 +1,7 @@
+sort data.txt | uniq -c | grep -e "1 .*$" | awk '{print $2}'
+
+The task for this one is to get the only line that occurs once in a file.
+To do this effectively, the lines need to be sorted, and then piped to uniq.
+The -c shows how many times a line appeared, since uniq prints all unique lines.
+The grep only grabs the line beginning with 1 followed by a space"
+This is then piped to awk to filter out just the password

@@ -1,0 +1,4 @@
+There's a few ways you can do this one.
+find has an option to tell if a file is human-readable, but I don't know what it is.
+I used 'file' on each file to see what type of data was in each one.
+Only one had ASCII Text, the others were unknown

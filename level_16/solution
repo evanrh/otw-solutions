@@ -1,0 +1,5 @@
+nmap -p 31000-32000 -oG - localhost | cut -f 2 | grep Ports | cut -d ' ' -f 2- | sed -e "s/,\/*/\n/g" | cut -d '/' -f 1
+
+The above pipeline is a very convoluted way to get just the ports that are open.
+I wanted to put them into a sort of script, rather than checking all the ports individually, but that did not happen.
+I checked all the ports that were open with ncat --ssl after I used this, and got a private key for the next level.

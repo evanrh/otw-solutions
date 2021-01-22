@@ -1,0 +1,7 @@
+cat data.txt | xxd -r | gunzip | bunzip2 | gunzip | tar -xO | tar -xO | bunzip2 | tar -xO | gunzip
+
+The long pipeline above takes the first file and decompresses it several times, based off of the type of file it is.
+The file type for each stage was first found by piping the output to "file -".
+After this was done, the file would then be put through whichever decompression algorithm was necessary and repeated.
+xxd -r Reverses a binary dump of a file, and the -xO flag for tar outputs to stdout.
+tar does not typically output to stdout, so this was necessary.

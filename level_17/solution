@@ -1,0 +1,4 @@
+diff passwords.old passwords.new
+
+The solution to this one is rather simple.
+diff shows which lines are different between two inputs, and outputs them with < and > to denote information from each input.

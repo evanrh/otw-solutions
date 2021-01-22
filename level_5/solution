@@ -1,0 +1,4 @@
+Learned how to use find for this one.
+Find has several flags that are useful here: -readable, -size, and -executable.
+The readable takes no arguements, and size takes a number followed by a letter denoting what denomination of size, in this case, c for bytes, so 1033c.
+The executable flag tells if a file is executable.

@@ -1,0 +1,3 @@
+- is a shorthand for stdin in bash.
+Since the file has this name, you must use a path to refer to it, so that bash
+knows you are talking about a file, and not stdin.
