@@ -1,0 +1,6 @@
+$0
+
+All commands are uppercase in this shell, which means most, if not all, will not work.
+There is an environment variable called "0", which is the user's set shell in /etc/passwd.
+This can be used as $0, which will invoke a new shell, not in uppercase.
+Then, any command can be ran normally.

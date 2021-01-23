@@ -1,0 +1,3 @@
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+
+Basic git clone command, then cat the README, which contains the password for the next level.

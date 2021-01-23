@@ -1,0 +1,6 @@
+git tag
+git show secret
+
+This one is a tagged commit in the git history.
+You can see tags with git tag, and there is one called secret.
+When this tag is shown, the password is shown.

@@ -1,0 +1,4 @@
+This one is more vim shenanigans.
+You can execute a shell in vim, but we have to reset our shell to bash in order for it to work.
+To set the shell to bash, we execute ":set shell=/bin/bash" in the vim command line.
+Then, we can use ":sh" to open a shell and complete the level with the provided executable.

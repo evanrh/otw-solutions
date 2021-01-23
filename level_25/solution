@@ -1,0 +1,8 @@
+VIM command: :e /etc/bandit_pass/bandit26
+
+In this level, the shell is not bash. You can find a user's shell by looking in /etc/passwd.
+e.g. cat /etc/passwd | grep bandit26
+
+This points us to a shell script which opens a file in more, then exits.
+On the surface, there really isn't anything we can do, but if the window is small enough, more overfills instead of exiting.
+Once it is in this state, we can then open VIM by typing 'v', and then open the password file from VIM.

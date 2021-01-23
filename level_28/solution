@@ -1,0 +1,5 @@
+git log -p
+
+Clone the repo then use the above command.
+The password was hidden in the file, but you can see what was changed in the log.
+Since the password was once there, it will show up in what was changed.

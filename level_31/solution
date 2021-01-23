@@ -1,0 +1,6 @@
+echo "May I come in?" > key.txt && git add key.txt -f && git commit -m "Updated" && git push origin master
+
+This didn't need to be a one liner, but I thought it would be fun.
+In order to get this password, you need to have a file named key.txt with the contents, "May I come in?".
+This needs to be pushed to the remote repo, and there is a .gitignore preventing you from commiting this file.
+Just add a -f and the rest of the commands will follow.
